@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/security.css">
+    <script src="JS/p5.min.js"></script>
+    <script src='JS/caesarfreq.js'></script> 
+  </head>
+  <body>
+    <div class="container" id="clicker">
+      <blockquote id="menu">
+        <h1>Caesarversleuteling ontcijferen met frequentieanalyse</h1>
+      </blockquote>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center;";>
+                    <button class="hoofdstuk" onclick="tekstInvullen('caesarA');">tekst #1</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('caesarB');">tekst #2</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('caesarC');">tekst #3</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('caesarD');">tekst #4</button>
+                    <button class="hoofdstuk" onclick="verwerkInvoer();">&#128274; verwerk</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('reset');">reset</button>
+                </td>
+            </tr>        
+            <tr>
+                <td>
+                    <form id="invoercijfertekst">
+                        <textarea id="cijfertekst" rows="10" cols="46">cijfertekst</textarea>
+                    </form>
+                </td>
+                <td>
+                    <div id="uitvoerklaretekst" style="width: 431px; height: 190px; margin-top: -4px;"><i>hier komt de uitvoer.</i></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: justify;";>
+                    Vul handmatig een cijfertekst in en klik daarna op verwerk of gebruik de buttons om een tekst te selecteren.
+                    Met de pijltjestoetsen kun je vervolgens de sleutel aanpassen tot je het bericht hebt ontcijferd.                    
+                </td>
+            </tr>            
+        </table>
+      <div id="processing" style='border: 1px dashed grey; padding: 10px;'></div>
+    </div>
+    <script src="JS/slo.js"></script>
+  </body>
+</html>

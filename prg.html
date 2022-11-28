@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/security.css">
+    <script src="JS/p5.min.js"></script>
+    
+    <script src='JS/prg.js'></script>
+    
+  </head>
+  <body>
+    <div class="container" id="clicker">
+      <blockquote id="menu">
+        <h1>random en pseudorandom getallen</h1>
+      </blockquote>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center;";>
+                    <button class="hoofdstuk" onclick="tekstInvullen('1213');">1213</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('1214');">1214</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('2500');">2500</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('7056');">7056</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('7524');">7524</button>
+                </td>
+            </tr>        
+            <tr>
+                <td colspan="2" style="text-align: justify;";>
+                    Dit is een uitwerking van een <i>pseudorandom number generator</i> gebruikt makend van de methode van middelste-kwadraten.
+                    Met de knoppen kun je een ander begingetal (<i>seed</i>) kiezen voor de generator.<br>
+                    <br>In de figuur zie je een visuele uitwerking van de generator (in rood) ten opzichte van een volstrekt willekeurige reeks (blauw).
+                </td>
+            </tr>            
+        </table>
+      <div id="processing" style='border: 1px dashed grey; padding: 10px;'>
+      </div>
+    </div>
+    <script src="JS/slo.js"></script>
+  </body>
+</html>

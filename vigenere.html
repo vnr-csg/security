@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/security.css">
+    <script src="JS/p5.min.js"></script>
+    <script src='JS/vigenere.js'></script> 
+  </head>
+  <body>
+    <div class="container" id="clicker">
+      <blockquote id="menu">
+        <h1>Vigen&egrave;re</h1>
+      </blockquote>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center;";>
+                    <button class="hoofdstuk" onclick="tekstInvullen('vigA');">tekst #1</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('vigB');">tekst #2</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('slA');">sleutel #1</button>
+                    <button class="hoofdstuk" onclick="tekstInvullen('slB');">sleutel #2</button>
+                    <button class="hoofdstuk" onclick="lfilter('s');">filter #1</button>
+                    <button class="hoofdstuk" onclick="lfilter('k');">filter #2</button>
+                </td>
+            </tr>        
+            <tr>
+                <td colspan="2" style="text-align: justify;";>
+                    Gebruik de buttons om van klare tekst en sleutel te wisselen.
+                </td>
+            </tr>            
+        </table>
+      <div id="processing" style='border: 1px dashed grey; padding: 10px;'></div>
+    </div>
+  </body>
+  <script src="JS/slo.js"></script>
+</html>
